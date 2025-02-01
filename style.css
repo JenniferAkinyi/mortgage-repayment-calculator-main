@@ -51,12 +51,10 @@ section{
     color: var(--Slate900);
     font-size: 14px;
 }
-#sign{
+/* #sign{
     position: relative;
     bottom: 3rem;
-    
-    /* z-index: 1000; */
-}
+} */
 .amount input{
     width: 100%;
     height: 2.4rem;
@@ -64,7 +62,6 @@ section{
     margin-bottom: 1rem;
     border: 1px solid var(--Slate700);
     border-radius: 4px;
-    background: linear-gradient(toright, red 80%,var(--Slate100)20%) right;
 }
 .rates{
     display: flex;
