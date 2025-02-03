@@ -51,45 +51,61 @@ section {
   color: var(--Slate900);
   font-size: 14px;
 }
-#sign {
-  position: relative;
-  bottom: 3rem;
-
-  /* z-index: 1000; */
-}
 .amount {
   display: flex;
   height: 2.4rem;
   flex-direction: row-reverse;
   border: 1px solid var(--Slate700);
 }
-
 .amount .sign {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: skyblue;
+  background-color: var(--Slate100);
 }
 .amount input {
-  width: 80%;
+  width: 85%;
   height: 100%;
   border: 0;
 }
-.amount input:focus-visible {
-    border-color: brown;
+.amount input:hover {
+  border: none;
 }
 .rates {
   display: flex;
   gap: 1rem;
 }
-.rates input {
-  width: 100%;
+.term .years,.percent{
+  display: flex;
   height: 2.4rem;
+  border: 1px solid var(--Slate700);
   margin-top: 5px;
   margin-bottom: 1rem;
-  border: 1px solid var(--Slate700);
-  border-radius: 4px;
+}
+.term input {
+  width: 75%;
+  height: 100%;
+  border: none;
+}
+.term .years p{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Slate100);
+}
+.percent input{
+  width: 80%;
+  height: 100%;
+  border: none;
+}
+.interest .percent p{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Slate100);
 }
 .radio-option {
   display: flex;
@@ -124,7 +140,23 @@ button {
 button img {
   margin-right: 0.5rem;
 }
-.results {
+.results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  padding: 1rem 1rem;
   width: 50%;
+  border-radius: 0rem 1rem 1rem 4.5rem;
   background-color: var(--Slate900);
+}
+.results img{
+  width: 40%;
+}
+.results p{
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 0.5rem;
 }
