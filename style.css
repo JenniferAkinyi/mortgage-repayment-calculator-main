@@ -20,8 +20,8 @@ section {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 500px;
-  margin-top: -250px;
+  height: 520px;
+  margin-top: -260px;
   width: 50%;
   margin-left: -25%;
   padding: 2rem 2rem;
@@ -119,6 +119,9 @@ section {
 .radio-option input[type='radio'] {
   margin-left: 0.5rem;
 }
+.radio-option input[type='radio']:checked {
+  background-color: var(--Lime);
+}
 .radio-option label {
   font-size: 14px;
   color: var(--Slate900);
@@ -143,10 +146,8 @@ button img {
 .results{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: var(--White);
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   width: 50%;
   border-radius: 0rem 1rem 1rem 4.5rem;
   background-color: var(--Slate900);
@@ -155,8 +156,35 @@ button img {
   width: 40%;
 }
 .results p{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 100;
-  text-align: center;
   margin-top: 0.5rem;
+}
+.not-visible{
+  display: none;
+}
+.display-message{
+  font-size: 14px;
+}
+.results h3{
+  text-align: left;
+}
+.payments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0e2431;
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+  border-radius: 0.8rem;
+  border-style: solid;
+  border-color: var(--Lime) #0e2431 #0e2431 #0e2431;
+  /* border-top: 5px solid (--Lime); */
+}
+.payments h1{
+  font-size: 2rem;
+  color: var(--Lime);
+}
+hr{
+  border: 1px solid var(--Slate100);
 }

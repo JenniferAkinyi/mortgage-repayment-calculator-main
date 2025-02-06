@@ -14,7 +14,7 @@
   </head>
   <body>
     <section>
-      <div class="calculator">
+      <div class="calculator" id="calculator">
         <div class="heading">
           <h2>Mortgage Calculator</h2>
           <p>ClearAll</p>
@@ -27,13 +27,15 @@
               <p>£</p>
             </div>
           </div>
+          <div class="display-message" id="amount-message"></div>
           <div class="rates">
             <div class="term">
-              <label for="term">Morgage Term</label>
+              <label for="term">Mortgage Term</label>
               <div class="years">
                 <input type="text" id="term"/>
                 <p>years</p>
               </div>
+              <div class="display-message" id="term-message"></div>
             </div>
             <div class="interest">
               <label for="rate">Interest Rate</label>
@@ -41,36 +43,40 @@
                 <input type="text" id="rate"/>
                 <p>%</p>
               </div>
-            </div>
-          </div>
-          <div class="radioButtons">
-            <label for="repayment">Mortgage Type</label>
-            <div class="radio-option">
-              <input
-                type="radio"
-                id="repayment"
-                name="mortgageType"
-                value="repayment"
-              />
-              <label for="repayment">Repayment</label>
-            </div>
-            <div class="radio-option">
-              <input
-                type="radio"
-                id="interestOnly"
-                name="mortgageType"
-                value="interestOnly"
-              />
-              <label for="interestOnly">Interest Only</label>
+              <div class="display-message" id="rate-message"></div>
             </div>
           </div>
         </div>
-        <button>
+        <div class="radioButtons" id="radioButtons">
+          <label for="repayment">Mortgage Type</label>
+          <div class="radio-option">
+            <input
+              type="radio"
+              class="mortgageType"
+              id="repayment"
+              name="mortgageType"
+              value="repayment"
+            />
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="radio-option">
+            <input
+              type="radio"
+              class="mortgageType"
+              id="interestOnly"
+              name="mortgageType"
+              value="interestOnly"
+            />
+            <label for="interestOnly">Interest Only</label>
+          </div>
+          <div class="display-message" id="radioButtons-message"></div>
+        </div>
+        <button id="calculationBtn">
           <img src="./assets/images/icon-calculator.svg" alt="calc" /> Calculate
           Payments
         </button>
       </div>
-      <div class="results">
+      <div class="results" id="results">
         <img src="./assets/images/illustration-empty.svg" alt="empty" />
         <h3>Results shown here</h3>
         <p>
@@ -79,7 +85,6 @@
         </p>
       </div>
     </section>
-
     <script src="script.js"></script>
   </body>
 </html>
